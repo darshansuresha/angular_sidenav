@@ -1,0 +1,19 @@
+<div class="sidebar" [ngClass]="{ expanded: isExpanded }">
+  <div class="toggleheader bg-dark">
+    <div class="toggle" (click)="handleSidebarToggle()">
+      <span class="chevron"></span>
+    </div>
+  </div>
+  <div class="maincontent mt-5">
+    <div class="link" *ngFor="let item of menulist">
+      <div
+        class="content"
+        routerLink="/{{ item.navigation }}"
+        [routerLinkActive]="'active'"
+      >
+        <div class="icon"><i class="{{ item.icon }}"></i></div>
+        <div class="title">{{ item.name }}</div>
+      </div>
+    </div>
+  </div>
+</div>

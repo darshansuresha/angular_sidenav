@@ -1,0 +1,19 @@
+<div class="container-fluid g-0">
+  <app-header></app-header>
+
+  <main>
+    <app-sidenav
+      [isExpanded]="sidebarExpanded"
+      (toggleSidebar)="sidebarExpanded = !sidebarExpanded"
+    ></app-sidenav>
+    <div class="maincomponent" [ngClass]="{ sidebarExpanded: sidebarExpanded }">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+
+  <footer class="bg-dark">
+    <div class="container">
+      <span class="text-light">Bootstrap 5 Fixed footer content here.</span>
+    </div>
+  </footer>
+</div>

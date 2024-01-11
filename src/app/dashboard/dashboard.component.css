@@ -1,0 +1,35 @@
+app-header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  height: 4rem;
+  z-index: 2;
+}
+
+main {
+  position: absolute;
+  width: 100%;
+  top: 4rem;
+  margin-bottom: 6rem;
+  z-index: 1;
+}
+
+.maincomponent {
+  margin-left: 70px;
+  transition: 0.3s;
+  margin-bottom: 60px;
+}
+.sidebarExpanded {
+  margin-left: 160px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9999;
+}
